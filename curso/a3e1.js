@@ -1,0 +1,1 @@
+console.log("sou Diego e tenho", 20 ,"anos")
