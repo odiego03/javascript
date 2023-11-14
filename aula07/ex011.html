@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>teste de velocidade</h1>
+    sua velocidade foi de <input type="number" id="vel"> kms
+    <input type="button" value="checar" onclick="calc()">
+    <div id="msg"></div>
+    <script>
+        function calc() {
+            let tv = document.getElementById('vel')
+            let res = Number(tv.value)
+            if (res <= 50) {
+                msg.innerText = 'Voce nao ultrapassou o limite de velocidade'
+            }else {
+                msg.innerText = 'Por ultrapassar o limite de velocidade voce sera multado!'
+            }
+        }
+    </script>
+</body>
+</html>
